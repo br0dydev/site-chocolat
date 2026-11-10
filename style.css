@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.bg {
+.bg{
     background: #FEF5ED;
     background: linear-gradient(
         180deg,
@@ -14,59 +14,59 @@
     );
 }
 
-.flex {
+.flex{
     display: flex;
     flex-wrap: wrap;
 }
 
-.between {
+.between{
     justify-content: space-between;
 }
 
-.left {
+.left{
     justify-content: flex-start;
 }
 
-.drt {
+.drt{
     gap: 60px;
 }
 
-.container-1000 {
+.container-1000{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
-.wd50 {
+.wd50{
     width: 500px;
 }
 
-.padding {
+.padding{
     padding: 90px;
 }
 
-.paddingtb {
+.paddingtb{
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
-.a {
+.a{
     width: 90px;
     color: black;
 }
 
-.align-item {
+.align-item{
     align-items: center;
 }
 
-.cartes {
+.cartes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
 }
 
-.card {
+.card{
     width: 300px;
     padding: 15px;
     background: #FEF5ED;
@@ -74,17 +74,17 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.card img{
     width: 100%;
     height: 200px;
     border-radius: 10px;
 }
 
-.card h2 {
+.card h2{
     margin-bottom: 15px;
 }
 
-.card p {
+.card p{
     margin-top: 15px;
     line-height: 1.5;
 }
@@ -105,4 +105,8 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.bxshadow{ 
+    box-shadow: -8px 8px 0px #533010 ;
 }
