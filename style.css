@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background: #FEF5ED;
+    background: linear-gradient(
+        180deg,
+        rgba(254, 245, 237, 1) 40%,
+        rgba(255, 255, 255, 1) 100%
+    );
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.drt {
+    gap: 60px;
+}
+
+.container-1000 {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wd50 {
+    width: 500px;
+}
+
+.padding {
+    padding: 90px;
+}
+
+.paddingtb {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.a {
+    width: 90px;
+    color: black;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    padding: 15px;
+    background: #FEF5ED;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.reveal {
+    animation: apparition linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
