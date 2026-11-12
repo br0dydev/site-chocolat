@@ -1,112 +1,144 @@
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.bg{
-    background: #FEF5ED;
-    background: linear-gradient(
-        180deg,
-        rgba(254, 245, 237, 1) 40%,
-        rgba(255, 255, 255, 1) 100%
-    );
+html{ scroll-behavior: smooth; }
+
+body{
+    background: #FAF7F2;
+    color: #40352E;
+    font-family: sans-serif;
+    line-height: 1.7;
 }
 
-.flex{
+img{ display: block; object-fit: cover; }
+
+a, em{ color: #B88968; }
+
+.img{ width: 100%; }
+
+.text{ color: #81766D; font-size: 14px; }
+
+.ycbrody{
+    color: #A78367;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.title{ margin: 12px 0 35px; }
+
+.btn{
+    display: inline-block;
+    padding: 13px 22px;
+    background: #765443;
+    color: white;
+    font-size: 12px;
+    transition: .2s;
+}
+
+.btn:hover{ background: #96745F; }
+
+
+.header{
+    max-width: 1150px;
+    margin: auto;
+    padding: 22px 30px;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.between{
+    align-items: center;
     justify-content: space-between;
 }
 
-.left{
-    justify-content: flex-start;
-}
+.logo{ width: 165px; }
 
-.drt{
-    gap: 60px;
-}
-
-.container-1000{
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.wd50{
-    width: 500px;
-}
-
-.padding{
-    padding: 90px;
-}
-
-.paddingtb{
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-.a{
-    width: 90px;
-    color: black;
-}
-
-.align-item{
-    align-items: center;
-}
-
-.cartes{
+nav{
     display: flex;
-    flex-wrap: wrap;
+    gap: 35px;
+    font-size: 13px;
+}
+
+nav a:hover{ color: #B88968; }
+
+
+.hero{
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 30px 105px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.hero div{ flex: 1; }
+
+.hero h1{ max-width: 540px; margin: 18px 0; }
+
+.hero .text{ max-width: 440px; margin-bottom: 28px; }
+
+.hero .img{ width: 46%; height: 430px; }
+
+
+.about{
+    background: #F0E9E0;
+    padding: 85px 30px;
+    display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    gap: 100px;
 }
 
-.card{
-    width: 300px;
-    padding: 15px;
-    background: #FEF5ED;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.about .title{ min-width: 40%; margin: 0; }
+
+
+.shop{
+    max-width: 1150px;
+    margin: auto;
+    padding: 95px 30px;
 }
 
-.card img{
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 25px;
 }
 
-.card h2{
-    margin-bottom: 15px;
+.grid .img{ height: 230px; margin-bottom: 15px; }
+
+.grid h3{ margin-bottom: 6px; }
+
+.grid .text{ font-size: 12px; }
+
+
+.gift{
+    background: #F0E9E0;
+    padding: 75px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
 }
 
-.card p{
-    margin-top: 15px;
-    line-height: 1.5;
+.gift .img{ width: 43%; height: 330px; }
+
+.gift div{ max-width: 430px; }
+
+.gift h2{ margin: 13px 0; }
+
+.gift .text{ font-size: 13px; margin-bottom: 18px; }
+
+
+.contact{
+    text-align: center;
+    padding: 85px 25px;
 }
 
-.reveal {
-    animation: apparition linear both;
-    animation-timeline: view();
-    animation-range: entry 0% entry 100%;
-}
+.contact h2{ margin: 15px 0; }
 
-@keyframes apparition {
-    from {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.bxshadow{ 
-    box-shadow: -8px 8px 0px #533010 ;
+.contact .text{
+    max-width: 430px;
+    margin: 0 auto 25px;
+    font-size: 13px;
 }
